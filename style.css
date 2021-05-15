@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+h1 {
+    font-size: 6rem;
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    height: 3rem;
+    align-items: center;
+    background-color: rgb(71, 51, 74);
+}
+
+ul {
+    list-style: none;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: violet;
+    padding: 1rem 1rem;
+    margin: 0 1rem;
+}
+
+.main {
+    position: relative;
+    top: 3rem;
+}
+
+#welcome-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    background-image: radial-gradient(circle, rgb(77, 51, 74), blue, rgb(77, 51, 74));
+   
+}
+
+#welcome-section > h1 {
+    background: -webkit-linear-gradient(#743ad5, #d53a9d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 1rem;
+}
+
+#welcome-section > p {
+    color: blue;
+}
+
+.projects-section {
+    text-align: center;
+    padding: 3.5rem 1rem;
+    background-color: rgb(77, 51, 74);
+    width: 100%;
+}
+
+.projects-section > h2 {
+    padding: .5rem;
+    margin: 1rem;
+    color: violet;
+    border: 2px solid;
+    border-image-slice: 1;
+    border-width: 3px;
+    border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
+
+}
+
+.projects-grid > a {
+    color: violet;
+    text-decoration: none;
+}
+
+.project-title {
+    font-size: 1rem;
+    padding: 1rem .5rem;
+    background-color: blue;
+    border-radius: 4px;
+    max-height: 80px;
+    
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: .8fr .8fr .8fr .8fr;
+    grid-column-gap: 10px;
+}
+
+.project-image {
+    width: 100%;
+    border-radius: 6px;
+}
+
+.code {
+    color: blue;
+    transition: color 0.5s ease-out;
+}
+
+.project:hover .code {
+    color: plum;
+}
+
+
+max width 244px
