@@ -154,7 +154,7 @@ ul {
 .contact-section img {
     width: 100px;
     height: 100px;
-    opacity: 70%;
+    opacity: 60%;
 }
 
 .logo {
@@ -175,12 +175,21 @@ ul {
     border-bottom: 10px solid rgb(77, 51, 74);
 }
 
-.contact-section h2, p {
+.contact-section  h2, p {
     color: lightskyblue;
 }
 
-.contact-section-header span:hover {
-    color: red;
+.footer {
+    height: 2rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color:lightsteelblue;
+}
+
+.footer p {
+    color:rgb(71, 51, 74);
 }
 
 @media only screen and (max-width: 665px) {
